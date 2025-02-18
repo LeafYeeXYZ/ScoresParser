@@ -4,7 +4,7 @@
     "singleQuote": true
   },
   "name": "@leaf/bnu-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "exports": "./index.ts",
   "license": "GPL-3.0",
   "compilerOptions": {

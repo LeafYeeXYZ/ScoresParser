@@ -193,7 +193,7 @@ async function getScores(page: Page): Promise<Score[]> {
           for (let j = 0; j < heads.length; j++) {
             if (tds[j].textContent) {
               score[heads[j]] = tds[j].textContent!.trim()
-            } else if (scores.length && scores[scores.length - 1][heads[j]]) {
+            } else if (heads[j] === '学年学期' && scores.length && scores[scores.length - 1][heads[j]]) {
               score[heads[j]] = scores[scores.length - 1][heads[j]]
             } else {
               score[heads[j]] = ''
