@@ -1,8 +1,8 @@
 import { resolve } from 'node:path'
 import { writeFile } from 'node:fs/promises'
-import puppeteer, { type Page } from 'npm:puppeteer'
-import * as _ from 'jsr:@psych/lib'
-import { exportSheet, type ExportTypes } from 'jsr:@psych/sheet'
+import puppeteer, { type Page } from 'npm:puppeteer@23.10.4'
+import * as _ from 'jsr:@psych/lib@1.18.0'
+import { exportSheet, type ExportTypes } from 'jsr:@psych/sheet@1.0.6'
 
 type Score = {
   '学年学期': string
@@ -67,6 +67,8 @@ export default async function parser({
   }
   const browser = await puppeteer.launch({
     headless: !showBrowser,
+    acceptInsecureCerts: true,
+    
   })
   const page = await browser.newPage()
   if (typeof parseHtmlOnly !== 'string') {

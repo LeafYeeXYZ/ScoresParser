@@ -21,7 +21,7 @@ await parser({
 ```
 
 ```bash
-deno run -A npm:puppeteer browsers install chrome
+deno run -A npm:puppeteer@23.10.4 browsers install chrome
 deno run -A main.ts
 ```
 
