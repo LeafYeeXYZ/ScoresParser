@@ -4,8 +4,8 @@
 
 脚本成功运行后, 将产生 3 个文件: `raw.html` (成绩页面的原始 HTML, 已将编码调整为 `UTF-8`, 修复了老旧的教务系统的编码问题), `scores.json` (成绩数据), `stat.json` (统计数据).
 
-[![JSR Version](https://jsr.io/badges/@leaf/bnu-parser)](https://jsr.io/@leaf/bnu-parser)
 [![JSR Scope](https://jsr.io/badges/@leaf)](https://jsr.io/@leaf)
+[![JSR Version](https://jsr.io/badges/@leaf/bnu-parser)](https://jsr.io/@leaf/bnu-parser)
 [![JSR Score](https://jsr.io/badges/@leaf/bnu-parser/score)](https://jsr.io/@leaf/bnu-parser/score)
 
 ## 使用方法
